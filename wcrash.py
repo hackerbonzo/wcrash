@@ -123,7 +123,7 @@ if __name__ == '__main__':
 		usage()
 	get_parameters()
 	print("\033[92m> Trwa atak na ",host," port: ",str(port)," ",str(thr),"\033[0m")
-	print("\033[94m> Atakowanie serwera TRUERIP1\033[0m")
+	print("\033[94m> Atakowanie",host," serwera metoda: TRUERIP1\033[0m")
 	user_agent()
 	my_bots()
 	time.sleep(5)
