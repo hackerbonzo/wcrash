@@ -55,7 +55,7 @@ def down_it(item):
 				print("\033[91m> Wyjebano metoda: TRUERIP\033[0m")
 			time.sleep(.1)
 	except socket.error as e:
-		print("\033[91m> Laczenie z ,host,...\033[0m")
+		print("\033[91m> Laczenie z serwerem..\033[0m")
 		#print("\033[91m",e,"\033[0m")
 		time.sleep(.1)
 
@@ -122,8 +122,8 @@ if __name__ == '__main__':
 	if len(sys.argv) < 2:
 		usage()
 	get_parameters()
-	print("\033[92m",host," port: ",str(port)," turbo: ",str(thr),"\033[0m")
-	print("\033[94m> Atakowanie ,host, TRUERIP1\033[0m")
+	print("\033[92m> Trwa atak na ",host," port: ",str(port)," ",str(thr),"\033[0m")
+	print("\033[94m> Atakowanie serwera TRUERIP1\033[0m")
 	user_agent()
 	my_bots()
 	time.sleep(5)
